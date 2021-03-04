@@ -21,11 +21,11 @@ while(i<N+1){
   E<-0
   E<-(R-error)*(R-error)
   errorabajo[i]<-c(E)
-  eajo<-errorabajo[i]+eajo
+  eajo<-eajo+E
   E<-0
   E<-(R+error)*(R+error)
   errorarriba[i]<-c(E)
-  eaba<-errorarriba[i]+eaba
+  eaba<-eaba+E
   y[i]<-c(S)
   x[i]<-c(M)
   n[i]<-c(i)
@@ -35,5 +35,5 @@ plot(n,y,)
 #plot(x,y) 
 
 
-errorpromedio<-(errorarriba[N]+errorabajo[N])/2
+errorpromedio<-(eaba+eajo)/2
 errorrelativo<-((errorpromedio-S)/errorpromedio)*100
