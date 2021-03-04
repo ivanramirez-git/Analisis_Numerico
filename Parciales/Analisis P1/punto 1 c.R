@@ -33,7 +33,5 @@ while(i<N+1){
 }
 plot(n,y,)
 #plot(x,y) 
-
-
 errorpromedio<-(eaba+eajo)/2
 errorrelativo<-((errorpromedio-S)/errorpromedio)*100
